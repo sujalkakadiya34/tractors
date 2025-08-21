@@ -1,17 +1,17 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Blogs.css';
 
-import ImageSlider from './ImageSlider';
-import Aboutus from './Aboutus';
-import Falcons from './Falcons';
-import Tractorimg from './Tractorimg';
-import Plant from './Plant';
-import Farming from './Farming';
-import Tracvedio from './Tracvedio';
-import Bghome from './Bghome';
-import Blogs from './Blogs';
+// import ImageSlider from './ImageSlider';
+// import Aboutus from './Aboutus';
+// import Falcons from './Falcons';
+// import Tractorimg from './Tractorimg';
+// import Plant from './Plant';
+// import Farming from './Farming';
+// import Tracvedio from './Tracvedio';
+// import Bghome from './Bghome';
+// import Blogs from './Blogs';
 
 function Icons() {
   return (
