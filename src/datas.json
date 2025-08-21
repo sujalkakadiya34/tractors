@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "food_image": "/assets/tractorimg7.png",
+    "food_name": "120 little Master ",
+    "food_description": "12 HP SERIES , 2WD , 🛑"
+  },
+    {
+    "id": 2,
+    "food_image": "/assets/tractorimg8.png",
+    "food_name": "120 little Master ",
+    "food_description": "12 HP SERIES , 2WD , 🛑"
+  },
+    {
+    "id": 3,
+    "food_image": "/assets/tractorimg9.png",
+    "food_name": "120 little Master ",
+    "food_description": "12 HP SERIES , 2WD , 🛑"
+  },
+   {
+    "id": 4,
+    "food_image": "/assets/tractorimg10.png",
+    "food_name": "120 little Master ",
+    "food_description": "12 HP SERIES , 2WD , 🛑"
+  },
+    {
+    "id": 5,
+    "food_image": "/assets/tractorimg11.png",
+    "food_name": "120 little Master ",
+    "food_description": "12 HP SERIES , 2WD , 🛑"
+  },
+    {
+    "id": 6,
+    "food_image": "/assets/tractorimg12.png",
+    "food_name": "120 little Master ",
+    "food_description": "12 HP SERIES , 2WD , 🛑"
+  }
+]

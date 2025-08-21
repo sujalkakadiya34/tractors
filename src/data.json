@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "food_image": "/assets/tractor3.png",
+    "food_name": "120 Little Master",
+    "food_description": "12 HP SERIES, 2WD"
+  },
+  {
+    "id": 2,
+    "food_image": "/assets/tractor4.png",
+    "food_name": "Captain XP",
+    "food_description": "15 HP SERIES, 2WD"
+  },
+  {
+    "id": 3,
+    "food_image": "/assets/tractor5.png",
+    "food_name": "MegaTrac",
+    "food_description": "20 HP SERIES, 4WD"
+  },
+  {
+    "id": 4,
+    "food_image": "/assets/tractor3.png",
+    "food_name": "SuperTorque",
+    "food_description": "25 HP SERIES, 2WD"
+  },
+  {
+    "id": 5,
+    "food_image": "/assets/tractor5.png",
+    "food_name": "PowerPlus",
+    "food_description": "30 HP SERIES, 4WD"
+  },
+  {
+    "id": 6,
+    "food_image": "/assets/tractor4.png",
+    "food_name": "AgroDrive",
+    "food_description": "35 HP SERIES, 4WD"
+  }
+]

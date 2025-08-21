@@ -1,0 +1,21 @@
+[
+    {
+    "id": 1,
+    "food_image": "/assets/SocialContribution2.png",
+    "food_description": "Shool Kite Donation Drive -",
+    "food_descriptions":"Sharing Kites, Spreading..."  
+    },
+    {
+    "id": 2,
+    "food_image": "/assets/SocialContribution1.jpeg",
+    "food_description": "Annual Blood Donation Camp - ",
+    "food_descriptions":"Be Part of A Life Saving Missio..."
+    },
+
+    {
+    "id": 3,
+    "food_image": "/assets/SocialContribution3.jpeg",
+    "food_description": "Tree Planation Drives - Plant",
+    "food_descriptions":"Trees Today, Breathe Better"
+    }
+]

@@ -1,0 +1,37 @@
+[
+  {
+     "id": 1,
+     "date": "2025-06-30",
+    "food_name": "Spicy Garlic Ramen",
+    "food_description": "A rich, savory ramen bowl with spicy garlic broth, tender pork slices, and soft-boiled egg."
+
+  },
+  {
+     "id": 2,
+     "date": "2025-06-29",
+    "food_name": "Creamy Mushroom Risotto",
+    "food_description": "Classic Italian risotto made with Arborio rice, fresh mushrooms, parmesan, and white wine."
+    
+  },
+  {
+     "id": 3,
+     "date": "2025-06-28",
+    "food_name": "Tandoori Chicken Platter",
+    "food_description": "Juicy, spiced tandoori chicken served with mint chutney, naan, and mixed salad."
+      
+  },
+  {
+     "id": 4,
+     "date": "2025-06-27",
+    "food_name": "Sushi Bento Box",
+    "food_description": "Assorted sushi rolls, sashimi, and pickled sides served in a traditional bento box."
+    
+  },
+  {
+     "id": 5,
+     "date": "2025-06-26",
+    "food_name": "Beef Tacos with Salsa Verde",
+    "food_description": "Crispy corn tortillas filled with seasoned beef, salsa verde, onions, and cilantro."
+    
+  }
+]

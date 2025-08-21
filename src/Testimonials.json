@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Santosh Dongre",
+        "location": "Mharastra",
+        "story": "I’m Manu Singh from a small village in Uttar Pradesh, where I help my brother manage our family’s farmland. Farming is more than a livelihood for us – it’s our legacy. Earlier, we struggled with outdated equipment and hard manual labor. Since we started using Captain Tractor, everything changed. It’s powerful, easy to handle, and saves us.",
+        "image": "/assets/Testimonials1.jpg" 
+    },
+    {
+        "id": 2,
+        "name": "Manu Singh",
+        "location": "Uttar Pradesh",
+        "story": "yoooo I’m Manu Singh from a small village in Uttar Pradesh, where I help my brother manage our family’s farmland. Farming is more than a livelihood for us – it’s our legacy. Earlier, we struggled with outdated equipment and hard manual labor. Since we started using Captain Tractor, everything changed. It’s powerful, easy to handle, and saves us.",
+        "image": "/assets/Testimonials2.jpg" 
+    },
+    {
+        "id": 3,
+        "name": "Takubha Halji Jadeja",
+        "location": "Gujarat",
+        "story": "solo yooo I’m Manu Singh from a small village in Uttar Pradesh, where I help my brother manage our family’s farmland. Farming is more than a livelihood for us – it’s our legacy. Earlier, we struggled with outdated equipment and hard manual labor. Since we started using Captain Tractor, everything changed. It’s powerful, easy to handle, and saves us.",
+        "image": "/assets/Testimonials3.jpg"
+    }
+]
