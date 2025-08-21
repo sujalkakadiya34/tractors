@@ -592,7 +592,7 @@ body {
 .Bghome {
   text-align: center;
   background-color: #272422;    
-  background-image: url('../public/assets/tractor16.png') !important; 
+  /* background-image: url('../public/assets/tractor16.png') !important;  */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
