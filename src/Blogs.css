@@ -517,7 +517,13 @@
 .inquiry-form-btn2:hover{
   background-color: #f26b35;
   color: white;
-  }  
+  transition: 0.8s;  
+}  
+.inquiry-form-btn2.active {
+  background-color: #f26b35;  
+  color: white;              
+  border: 1px solid #f26b35;
+}
 @media (max-width: 768px) {
   .inquiry-form {
     display: flex;
@@ -592,7 +598,7 @@
 }
 
 .fname1-Business{
-  margin-right: 170px;
+  margin-right: 130px;
 }
 
 .inquiry-form-main-container{
@@ -681,6 +687,10 @@
 }
 .fname3-country{
   margin-right: 140px;
+}
+
+.fname3-state{
+  margin-right: 180px;
 }
 
 .inputbox{
@@ -800,6 +810,15 @@
   flex-wrap: wrap;
   gap: 0px;
 }
+
+/* .button-row1{
+  margin-bottom: 5px;
+} */
+
+/* .button-roww{
+  margin-bottom: 5px;
+} */
+
 .button-new-row {
   margin-top: 7px;
   margin-left: 80px;
@@ -2182,13 +2201,25 @@ li {
 
 
 .custom-button{
-  padding: 10px 20px;
+  padding: 12px 22px;
   border-radius: 20px;
-  border: 2px solid gray;
+  border: 1px solid #e7e8e7;
   background: white;
-  color: black;
+  color: #4d4949;
   font-weight: 600;
   margin: 0 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-button:hover,
+.custom-button.active {
+  border: 1px solid #f36b35;
+  color: #f36b35;
+  background: #fff; 
+}
+
+.international-buttons {
+  margin-bottom: 40px;  /* adjust space as needed */
 }

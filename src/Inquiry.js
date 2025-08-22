@@ -1,24 +1,44 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import './Blogs.css';
 import RequestQfooter from './RequestQfooter';
 import Footer from './footer';
 
 function Inquiry() {
-  const [selectedButtons, setSelectedButtons] = useState([]);
   const [activeTab, setActiveTab] = useState("domestic");
 
-  const buttonLabels = [
+  // Domestic & International Product Buttons
+  const domesticButtonLabels = [
     '200 DI 2WD', '200 DI 4WD', '200 DI LS', '223 4WD',
     '250 DI 2WD', '250 DI 4WD', '280 DX 2WD', '283 4WD',
     '280 4WD', '120 LITTLE MASTER', 'IMPLEMENTS',
   ];
 
-  const toggleButton = (label) => {
-    setSelectedButtons((prevSelected) =>
-      prevSelected.includes(label)
-        ? prevSelected.filter((item) => item !== label)
-        : [...prevSelected, label]
+  const internationalButtonLabels = [
+    '201 - 4WD', '223 - 4WD - Non EU', '282 - 4WD',
+    '283 - 4WD', '303 - 4WD', '280 DX - 4WD',
+    '283 H - 4WD', '303 H - 4WD', '223 - 4WD - EU',
+    '263 - 4WD', '263 H - 4WD', '263 MID ROPS - 4WD',
+    '263 H MID ROPS - 4WD', '2532 - 4WD', '263 H with Mid Deck Mower',
+    '263 with Loader', '263 H with Loader', '2532 with Loader',
+     'IMPLEMENTS',
+  ];
+
+  const [domesticSelectedButtons, setDomesticSelectedButtons] = useState([]);
+  const [internationalSelectedButtons, setInternationalSelectedButtons] = useState([]);
+
+  const toggleDomesticButton = (label) => {
+    setDomesticSelectedButtons((prev) =>
+      prev.includes(label)
+        ? prev.filter((item) => item !== label)
+        : [...prev, label]
+    );
+  };
+
+  const toggleInternationalButton = (label) => {
+    setInternationalSelectedButtons((prev) =>
+      prev.includes(label)
+        ? prev.filter((item) => item !== label)
+        : [...prev, label]
     );
   };
 
@@ -71,7 +91,9 @@ function Inquiry() {
     district: '',
     message: '',
     country: '',
-    zip: ''
+    zip: '',
+    address1: '',
+    address2: ''
   });
 
   const handleInputChange = (e) => {
@@ -96,7 +118,11 @@ function Inquiry() {
 
   const handleSubmit = () => {
     if (validateForm()) {
-      alert(`✅ ${activeTab === "domestic" ? "Domestic" : "International"} Inquiry Submitted Successfully!`);
+      const selectedProducts =
+        activeTab === "domestic" ? domesticSelectedButtons : internationalSelectedButtons;
+
+      alert(`✅ ${activeTab === "domestic" ? "Domestic" : "International"} Inquiry Submitted Successfully!
+Products Selected: ${selectedProducts.join(", ") || "None"}`);
 
       generateCaptcha();
       setUserCaptchaInput('');
@@ -110,9 +136,12 @@ function Inquiry() {
         district: '',
         message: '',
         country: '',
-        zip: ''
+        zip: '',
+        address1: '',
+        address2: ''
       });
-      setSelectedButtons([]);
+      setDomesticSelectedButtons([]);
+      setInternationalSelectedButtons([]);
     }
   };
 
@@ -133,25 +162,24 @@ function Inquiry() {
         </div>
 
         {/* Toggle Buttons */}
-      <div className="inquiry-form">
-        <button
-          className={`inquiry-form-btn2 ${activeTab === "domestic" ? "active" : ""}`}
-          onClick={() => setActiveTab("domestic")}
-        >
-          Domestic Inquiry
-        </button>
-        <button
-          className={`inquiry-form-btn2 ${activeTab === "international" ? "active" : ""}`}
-          onClick={() => setActiveTab("international")}
-        >
-          International Inquiry
-        </button>
-      </div>
+        <div className="inquiry-form">
+          <button
+            className={`inquiry-form-btn2 ${activeTab === "domestic" ? "active" : ""}`}
+            onClick={() => setActiveTab("domestic")}
+          >
+            Domestic Inquiry
+          </button>
+          <button
+            className={`inquiry-form-btn2 ${activeTab === "international" ? "active" : ""}`}
+            onClick={() => setActiveTab("international")}
+          >
+            International Inquiry
+          </button>
+        </div>
 
         <div className='inquiry-form-hr'><hr /></div>
 
         {/* === Form === */}
-        {/* First/Last/Business */}
         <div className='inquiry-form-main-container'>
           <div className='inquiry-form-firstname'>
             <label className='fname1'>First Name<span style={{ color: 'red' }}>*</span></label><br />
@@ -191,7 +219,7 @@ function Inquiry() {
             <>
               <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
-                  <label className='fname3'>State</label><br />
+                  <label className='fname3-state'>State</label><br />
                   <select name='state' value={formData.state} onChange={handleInputChange} className='lname-input-emailRow'>
                     <option>Select State</option>
                     <option>Gujarat</option>
@@ -214,20 +242,18 @@ function Inquiry() {
             </>
           ) : (
             <>
-
               <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
                   <label className='fname3-add1'>Address Line 1<span style={{ color: 'red' }}>*</span></label><br />
-                  <input type='text' name='country' value={formData.country} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Country' />
+                  <input type='text' name='address1' value={formData.address1} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Address Line 1' />
                 </div>
               </div>
-                <div className='inquiry-form-main-container'>
+              <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
-                  <label className='fname3-add2'>Address Line 2<span style={{ color: 'red' }}>*</span></label><br />
-                  <input type='text' name='country' value={formData.country} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Country' />
+                  <label className='fname3-add2'>Address Line 2</label><br />
+                  <input type='text' name='address2' value={formData.address2} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Address Line 2' />
                 </div>
               </div>
-
               <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
                   <label className='fname3-country'>Country</label><br />
@@ -248,29 +274,54 @@ function Inquiry() {
           {/* Select Products */}
           <div className="select-products">
             <p className="select-products-p">Select Products</p>
-            <div className="button-row">
-              {buttonLabels.slice(0, 8).map((label, index) => (
-                <button
-                  key={index}
-                  className={`custom-button ${selectedButtons.includes(label) ? 'active' : ''}`}
-                  onClick={() => toggleButton(label)}
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
 
-            <div className="button-new-row">
-              {buttonLabels.slice(8).map((label, index) => (
-                <button
-                  key={index}
-                  className={`custom-button ${selectedButtons.includes(label) ? 'active' : ''}`}
-                  onClick={() => toggleButton(label)}
-                >
-                  {label}
-                </button>
-              ))}
+            {activeTab === "domestic" ? (
+              <>
+                <div className="button-row">
+                  {domesticButtonLabels.slice(0, 8).map((label, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      className={`custom-button ${domesticSelectedButtons.includes(label) ? 'active' : ''}`}
+                      onClick={() => toggleDomesticButton(label)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+                <div className="button-new-row">
+                  {domesticButtonLabels.slice(8).map((label, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      className={`custom-button ${domesticSelectedButtons.includes(label) ? 'active' : ''}`}
+                      onClick={() => toggleDomesticButton(label)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>
+           <div className="international-buttons">
+              <div className="button-row">
+                {internationalButtonLabels.map((label, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    className={`custom-button ${
+                      internationalSelectedButtons.includes(label) ? "active" : ""
+                    }`}
+                    onClick={() => toggleInternationalButton(label)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
             </div>
+              </>
+            )}
           </div>
         </div>
 
@@ -278,7 +329,13 @@ function Inquiry() {
         <div className='textareaMessage1'>
           <p className='textareaMessage'>Message</p>
           <div className='textarea'>
-            <textarea name="message" className='textarea1' value={formData.message} onChange={handleInputChange} placeholder='Write something here...'></textarea>
+            <textarea
+              name="message"
+              className='textarea1'
+              value={formData.message}
+              onChange={handleInputChange}
+              placeholder='Write something here...'
+            ></textarea>
           </div>
         </div>
 
@@ -288,7 +345,12 @@ function Inquiry() {
           <canvas ref={canvasRef} width={320} height={44}></canvas>
           <button type="button" className="reset-btn" onClick={generateCaptcha}>Reset Captcha</button>
           <label>Submit Captcha</label>
-          <input type="text" value={userCaptchaInput} onChange={(e) => setUserCaptchaInput(e.target.value)} placeholder="Enter Captcha" />
+          <input
+            type="text"
+            value={userCaptchaInput}
+            onChange={(e) => setUserCaptchaInput(e.target.value)}
+            placeholder="Enter Captcha"
+          />
         </div>
 
         <div className="inquiry-form-hr1"><hr /></div>
@@ -304,9 +366,7 @@ function Inquiry() {
         <Footer />
       </div>
     </div>
-  ); 
+  );
 }
 
 export default Inquiry;
-
-
