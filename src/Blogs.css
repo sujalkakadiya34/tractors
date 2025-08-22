@@ -2208,6 +2208,7 @@ li {
   color: #4d4949;
   font-weight: 600;
   margin: 0 10px;
+  margin-bottom: 14px;
   cursor: pointer;
   /* transition: all 0.3s ease; */
   transition: all 0.2s ease-in-out;
@@ -2221,5 +2222,5 @@ li {
 }
 
 .international-buttons {
-  margin-bottom: 40px;  /* adjust space as needed */
+  margin-bottom: 40px;   
 }
