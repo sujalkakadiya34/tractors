@@ -133,20 +133,20 @@ function Inquiry() {
         </div>
 
         {/* Toggle Buttons */}
-        <div className='inquiry-form'>
-          <button
-            className={`custom-button ${activeTab === "domestic" ? "active" : ""}`}
-            onClick={() => setActiveTab("domestic")}
-          >
-            Domestic Inquiry
-          </button>
-          <button
-            className={`custom-button ${activeTab === "international" ? "active" : ""}`}
-            onClick={() => setActiveTab("international")}
-          >
-            International Inquiry
-          </button>
-        </div>
+      <div className="inquiry-form">
+        <button
+          className={`inquiry-form-btn2 ${activeTab === "domestic" ? "active" : ""}`}
+          onClick={() => setActiveTab("domestic")}
+        >
+          Domestic Inquiry
+        </button>
+        <button
+          className={`inquiry-form-btn2 ${activeTab === "international" ? "active" : ""}`}
+          onClick={() => setActiveTab("international")}
+        >
+          International Inquiry
+        </button>
+      </div>
 
         <div className='inquiry-form-hr'><hr /></div>
 
@@ -217,21 +217,21 @@ function Inquiry() {
 
               <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
-                  <label className='fname3'>Address Line 1<span style={{ color: 'red' }}>*</span></label><br />
+                  <label className='fname3-add1'>Address Line 1<span style={{ color: 'red' }}>*</span></label><br />
                   <input type='text' name='country' value={formData.country} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Country' />
                 </div>
               </div>
                 <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
-                  <label className='fname3'>Address Line 1<span style={{ color: 'red' }}>*</span></label><br />
+                  <label className='fname3-add2'>Address Line 2<span style={{ color: 'red' }}>*</span></label><br />
                   <input type='text' name='country' value={formData.country} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Country' />
                 </div>
               </div>
 
               <div className='inquiry-form-main-container'>
                 <div className='inquiry-form-firstname'>
-                  <label className='fname3'>Country</label><br />
-                  <input type='text' name='country' value={formData.country} onChange={handleInputChange} className='lname-input-emailRow' placeholder='Enter Country' />
+                  <label className='fname3-country'>Country</label><br />
+                  <input type='text' name='country' value={formData.country} onChange={handleInputChange} className='lname-input-emailRow11' placeholder='Enter Country' />
                 </div>
               </div>
               <div className='inquiry-form-main-container'>
@@ -308,3 +308,5 @@ function Inquiry() {
 }
 
 export default Inquiry;
+
+

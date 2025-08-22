@@ -497,7 +497,7 @@
   border: none;
   font-size:  18px;
   float: left;
-  margin-left: 80px;
+  margin-left: 180px;
 }  
 .inquiry-form-btn2 {
   padding: 10px;
@@ -511,18 +511,12 @@
   border: 1px solid #f46b35;
   font-size:  18px;
   float: left;
-  margin-left: 20px;
+  margin-left: 80px;
+  margin-right: -60px;
   }  
 .inquiry-form-btn2:hover{
   background-color: #f26b35;
-  padding: 10px;
   color: white;
-  border-radius: 19px;
-  padding-left: 18px;
-  padding-right: 18px;
-  font-size:  18px;
-  float: left;
-  margin-left: 20px;
   }  
 @media (max-width: 768px) {
   .inquiry-form {
@@ -544,8 +538,10 @@
   }
 }
 .inquiry-form-hr{
+  margin-top: 130px;
   margin-left: 80px;
   margin-right: 80px;
+
 }
 
 .inquiry-form-firstname{
@@ -652,6 +648,20 @@
   color: #a6a6a7;
 }
 
+.lname-input-emailRow11{
+    padding: 10px 20px 8px 20px;
+  border-radius: 18px;
+  margin-left: 30px;
+  width: 260px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #a6a6a7;
+  margin-left: 83px;
+}
+
 .fname2{
     margin-right: 20px;
     margin-left: -50px;
@@ -663,12 +673,16 @@
     margin-right: 120px;
 }
 .fname3{
-  margin-right: 180px;
+  margin-right: 100px;
 }
 
 .fname4{
   margin-right: 170px;
 }
+.fname3-country{
+  margin-right: 140px;
+}
+
 .inputbox{
   margin-top: 50px;
 }
@@ -751,10 +765,11 @@
 .select-products-p{
   font-size: 14px;
   margin-left: -1085px;
+  margin-top: 80px;
 }
 
 .select-products{
-  margin-top: 180px;
+  margin-top: 250px;
 }
 
 .basic-button {
@@ -881,7 +896,7 @@
 .inquiry-form-hr1{
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 16px;
+  margin-top: 300px;
   border-color: grey;
 }
 
@@ -2153,6 +2168,9 @@ li {
 .fname3-add2{
   margin-left: -115px;
 }
+.fname3-add2{
+  margin-left: -115px;
+}
 .inquiry-form-main-container-Country{
   margin-left: 50px;
   margin-top: 100px;
@@ -2163,3 +2181,14 @@ li {
 }
 
 
+.custom-button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid gray;
+  background: white;
+  color: black;
+  font-weight: 600;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
