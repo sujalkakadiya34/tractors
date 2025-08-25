@@ -1293,6 +1293,11 @@ li {
   margin-bottom: 14px;
 }
 
+.footer-toll:hover{
+  color: #f36b35;
+  transition: 0.3s;
+}
+
 .footer-follow {
   font-size: 14px;
   color: #ccc;
@@ -2223,4 +2228,238 @@ li {
 
 .international-buttons {
   margin-bottom: 40px;   
+}/* ================= Responsive Fix for Inquiry Form ================= */
+
+/* ---------- Default Desktop Styles (keep your original design) ---------- */
+
+/* ---------- Tablet and smaller (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .inquiry-form-main-container {
+    width: 100%;
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+
+  .fname-input,
+  .lname-input,
+  .lname-input-emailRow,
+  .lname-input-emailRow1,
+  .lname-input-emailRow11 {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  .captcha-box {
+    float: none !important;
+    margin: 20px auto !important;
+  }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+  .inquiry-main-container {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+
+  .inquiry-content .h1 {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .inquiry-content .p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* Toggle buttons */
+  .inquiry-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .inquiry-form-btn1,
+  .inquiry-form-btn2 {
+    width: 100%;
+    max-width: 320px;
+    margin: 8px 0;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* Inputs */
+  .inquiry-form-main-container {
+    margin: 15px 0;
+    text-align: left;
+  }
+
+  .fname-input,
+  .lname-input,
+  .lname-input-emailRow,
+  .lname-input-emailRow1,
+  .lname-input-emailRow11 {
+    width: 100% !important;
+    margin: 10px 0 !important;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Products */
+  .select-products-p {
+    margin: -200px 0 10px 0;
+    font-size: 14px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline;
+  }
+
+  .button-row,
+  .button-new-row,
+  .international-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .custom-button {
+    width: 100%;
+    max-width: 280px;
+    margin: 6px 0;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Message */
+  .textarea {
+    width: 100% !important;
+    margin: 20px 1px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .textarea label,
+  .textareaMessage {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 6px;
+    display: block;
+  } 
+
+  .textarea1 {
+    width: 100% !important;
+    min-height: 140px;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+    display: block;
+  }
+
+  /* Captcha */
+  .captcha-box {
+    width: 100% !important;
+    max-width: 340px;
+    margin: 20px 20px 10px -10px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .captcha-box label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .captcha-box canvas {
+    width: 100% !important;
+    height: auto !important;
+    margin: 10px 0;
+    border-radius: 6px;
+  }
+
+  .captcha-box input {
+    width: 100% !important;
+    margin-top: 8px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  /* Divider */
+  .inquiry-form-hr1 {
+    margin: 25px 0 !important;
+    width: 100%;
+  }
+
+  /* Send button */
+  .fainal-form-send {
+    margin: 20px auto !important;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .fainal-form-send-btn {
+    width: 100% !important;
+    max-width: 280px;
+    margin: 0 auto !important;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* ---------- Small Phones (≤480px) ---------- */
+@media (max-width: 480px) {
+  .inquiry-content .h1 {
+    font-size: 18px;
+  }
+
+  .custom-button {
+    max-width: 100%;
+  }
+
+  .textarea1 {
+    min-height: 120px;
+  }
+
+  .captcha-box {
+    max-width: 100% !important;
+    padding: 12px !important;
+  }
+
+  .fainal-form-send-btn {
+    max-width: 100% !important;
+  }
+}
+
+/* ---------- Extra Small Phones (≤360px) ---------- */
+@media (max-width: 360px) {
+  .inquiry-content .h1 {
+    font-size: 16px;
+  }
+
+  .inquiry-form-btn1,
+  .inquiry-form-btn2,
+  .custom-button,
+  .fainal-form-send-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .textarea1 {
+    min-height: 100px;
+  }
+
+  .captcha-box input {
+    font-size: 13px;
+    padding: 8px;
+  }
 }
