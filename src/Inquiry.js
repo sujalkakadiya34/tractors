@@ -153,6 +153,10 @@ Products Selected: ${selectedProducts.join(", ") || "None"}`);
           <img src="/assets/inquiry.jpg" alt="Inquiry" />
           <div className="center">Inquiry</div>
           <div className="center1"><b>Discover Your Next Adventure</b></div>
+          <div className='center2'>
+            <a href="http://localhost:3000/">Home</a>
+            <a href="http://localhost:3000/inquiry">Inquiry</a>
+          </div>
         </div>
 
         {/* Title */}
