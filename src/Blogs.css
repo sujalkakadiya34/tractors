@@ -547,7 +547,6 @@
   margin-top: 130px;
   margin-left: 80px;
   margin-right: 80px;
-
 }
 
 .inquiry-form-firstname{
@@ -2228,7 +2227,8 @@ li {
 
 .international-buttons {
   margin-bottom: 40px;   
-}/* ================= Responsive Fix for Inquiry Form ================= */
+}
+/* ================= Responsive Fix for Inquiry Form ================= */
 
 /* ---------- Default Desktop Styles (keep your original design) ---------- */
 
@@ -2344,14 +2344,21 @@ li {
     text-align: left;
   }
 
-  .textarea label,
-  .textareaMessage {
+  .textarea label {
     font-size: 18px;
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 6px;
     display: block;
   } 
+  .textareaMessage{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 145px;
+    margin-bottom: 6px;
+    display: block;
+  }
 
   .textarea1 {
     width: 100% !important;
