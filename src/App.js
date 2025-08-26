@@ -19,6 +19,7 @@ import Socialcontribution from './Socialcontribution';
 import Testimonials from './Testimonials';
 import BlogsInsights from './BlogsInsights';
 import Questions from './Questions';
+import Innovation from './Innovation';
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -46,6 +47,7 @@ function App() {
               <Farming />
               <Tracvedio />
               <Bghome />
+              <Innovation />
               <Blogs />
               <Socialcontribution />
               <Testimonials />

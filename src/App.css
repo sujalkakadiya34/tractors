@@ -38,6 +38,11 @@ body {
   margin-right: -670px;
 }
 
+.buttonnv:hover {
+  background-color: #184166;
+  transition: 0.6s;
+}
+
 .material-icons{
   margin-right: 20px;
   margin-left: 100px;
@@ -128,9 +133,7 @@ body {
   cursor: pointer;
   } */
 
-.buttonnv:hover {
-  background-color: #184166;
-}
+
 
 .about {
   flex: 1 1 45%;

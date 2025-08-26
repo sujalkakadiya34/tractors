@@ -1,0 +1,42 @@
+[
+  {
+    "year": 1997,
+    "gen": "1st Gen",
+    "img": "/assets/innovation_01.jpg"
+  },
+  {
+    "year": 1998,
+    "gen": "2nd Gen",
+    "img": "/assets/innovation_02.jpg"
+  },
+  {
+    "year": 1999,
+    "gen": "3rd Gen",
+    "img": "/assets/innovation_03.jpg"
+  },
+  {
+    "year": 2000,
+    "gen": "4th Gen",
+    "img": "/assets/innovation_04.jpg"
+  },
+  {
+    "year": 2007,
+    "gen": "5th Gen",
+    "img": "/assets/innovation_05.jpg"
+  },
+  {
+    "year": 2013,
+    "gen": "6th Gen",
+    "img": "/assets/innovation_06.jpg"
+  },
+  {
+    "year": 2016,
+    "gen": "7th Gen",
+    "img": "/assets/innovation_07.jpg"
+  },
+  {
+    "year": 2021,
+    "gen": "8th Gen",
+    "img": "/assets/innovation_09.jpg"
+  }
+]
