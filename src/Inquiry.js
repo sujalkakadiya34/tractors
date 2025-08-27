@@ -155,7 +155,7 @@ Products Selected: ${selectedProducts.join(", ") || "None"}`);
           <div className="center1"><b>Discover Your Next Adventure</b></div>
           <div className='center2'>
             <a href="http://localhost:3000/" className='inquiry-classic-btn-a1'>Home </a>
-            <p> . </p>
+            <a> . </a>            
             <a href="http://localhost:3000/inquiry" className='inquiry-classic-btn-a2'> Inquiry</a>
           </div>
       </div>
